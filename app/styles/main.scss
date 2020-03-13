@@ -1,0 +1,138 @@
+@import "_variables";
+@import "base";
+
+
+
+/*header*/
+.header{
+  position: absolute;
+  align-items: center;
+  top: 60px;
+  width: 100%;
+  z-index: 1;
+
+  .position{
+    background:rgba(255,255,255, 0.2);
+    padding: 17px 0 17px 50px;
+    z-index: -5;
+    h2{
+      padding-right: 90px;
+      text-align: center;
+    }
+  }
+
+  .name{
+    position: relative;
+    background: $color-accent;
+    padding: 27px 0;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -5px;
+      left: -50px;
+      background: $color-accent;
+      border: $color-white 5px solid;
+      border-right: none;
+      border-radius: 50% 0 0 50%;
+      z-index: -1;
+
+
+    }
+  }
+  h1{
+    text-transform: capitalize;
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+  }
+}
+
+.side-col{
+  padding-top: 180px;
+  background-image: linear-gradient(to right, #68676e, #717177, #7b7a80, #84848a, #8e8e93);
+}
+.cont-col{
+  padding-top: 170px;
+}
+/*side column*/
+
+.side-col{
+  color: $color-white;
+  padding-left: 35px;
+  a{
+    color: $color-white;
+  }
+  .icon-list{
+    margin-left: -15px;
+    i{
+      color: $color-primary;
+      padding-right: 5px;
+    }
+  }
+  h3{
+    color: $color-white;
+    position: relative;
+    margin-bottom: 20px;
+    &:before{
+      content: "";
+      position: absolute;
+      background: $color-primary;
+      height: 2px;
+      left: -35px;
+      right: 40%;
+      bottom: -5px;
+    }
+  }
+  .dot-list{
+    li{
+      position: relative;
+      &:before{
+        content:"";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $color-primary;
+        top: calc(50% - 5px / 2);
+        left: -15px;
+      }
+    }
+  }
+}
+
+/*content side*/
+
+.cont-col{
+  h3{
+    position: relative;
+    margin-bottom: 20px;
+    &:before{
+      content: "";
+      position: absolute;
+      background: $color-primary;
+      height: 4px;
+      left: -15px;
+      right: 40%;
+      bottom: -5px;
+    }
+  }
+  .fa-circle{
+    font-size: 4px;
+    vertical-align: middle;
+  }
+  ul li a{
+    color: $color-black;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media print {
+
+}
