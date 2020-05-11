@@ -55,7 +55,13 @@ ul{
   }
 }
 
-
+/*keyframes*/
+@keyframes slideIn {
+  0% {
+    background-color: transparent;
+    right: 100%;
+  }
+}
 
 
 
